@@ -1,8 +1,31 @@
-Générer des clés avec mkcert
+# Docker dev-environnement
 
+## Prerequisites
+- mkcert: https://github.com/FiloSottile/mkcert
+- docker & docker-compose
+
+## Installation
+### Get local ssl certificate
+```
+mkcert -install
+mkcert -cert-file certs/local-cert.pem -key-file certs/local-key.pem "docker.localhost" "*.docker.localhost" "domain.local" "*.domain.local"
+
+```
+
+### Start the containers
 ```bash
-docker network create proxy
-docker network create pma
-
 docker-compose up -d
 ```
+or you can start the containers one by one
+```bash
+docker-compose up -d [service_name]
+```
+
+## List of services
+- reverse-proxy
+- phpmyadmin
+- adminer
+- mysql_5.6
+- mysql_5.7
+- mysql_8.0
+- postgres_13
