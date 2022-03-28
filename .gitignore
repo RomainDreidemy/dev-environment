@@ -1,0 +1,7 @@
+### Computer ###
+.DS_Store
+### Computer ###
+
+.env
+certs/*
+!certs/.gitkeep
