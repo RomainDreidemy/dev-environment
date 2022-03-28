@@ -9,8 +9,13 @@
 ```
 mkcert -install
 mkcert -cert-file certs/local-cert.pem -key-file certs/local-key.pem "docker.localhost" "*.docker.localhost" "domain.local" "*.domain.local"
-
 ```
+
+### Fill env variable
+```
+cp .env.example .env
+```
+And fill the `.env` file.
 
 ### Start the containers
 ```bash
