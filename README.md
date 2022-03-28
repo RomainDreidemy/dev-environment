@@ -22,10 +22,13 @@ docker-compose up -d [service_name]
 ```
 
 ## List of services
-- reverse-proxy
-- phpmyadmin
-- adminer
-- mysql_5.6
-- mysql_5.7
-- mysql_8.0
-- postgres_13
+
+| Service     | Url                    |
+|-------------|------------------------|
+|reverse-proxy|-                       |
+|phpmyadmin   |pma.docker.localhost    |
+|adminer      |adminer.docker.localhost|
+|mysql_5.6    |-                       |
+|mysql_8.0    |-                       |
+|mysql_5.7    |-                       |
+|postgres_13  |-                       |
